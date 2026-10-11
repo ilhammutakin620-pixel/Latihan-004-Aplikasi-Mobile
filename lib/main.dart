@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Color(0xFF001F3F),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -20,20 +21,24 @@ class MyApp extends StatelessWidget {
               Text(
                 'Hello World',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.red,
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
+                  decoration: TextDecoration.underline,
+                  decorationColor: Colors.red,
                 ),
               ),
 
               SizedBox(height: 8),
 
               Text(
-                'Ilham Mutaqim',
+                'Ilham Muttaqim',
                 style: TextStyle(
                   color: Colors.grey,
                   fontSize: 18,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.bold,
+                  decoration: TextDecoration.underline,
+                  decorationColor: Colors.grey,
                 ),
               ),
 
